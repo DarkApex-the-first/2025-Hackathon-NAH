@@ -1,0 +1,1 @@
+var document1 = document.createElement('div');
