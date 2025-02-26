@@ -7,6 +7,7 @@
     --senary-color: #FEFFBE;
 
     --primary-color-dark: #00223A;
+    --mid-secondary-color:#002743;
 }
 
 *{
@@ -20,12 +21,10 @@ a{
 }
 
 body{
-    color: #ffffff;
+    color: var(--primary-color);
     font-family: archivo;
-    overflow-x: hidden;
     justify-content: center;
-    width: 100vw;
-    min-height: 100vh;
+
 }
 
 ::-webkit-scrollbar{
@@ -53,7 +52,6 @@ nav{
 
     width: 100%;
     height: 70px;
-    /* margin: 10px 0px; */
 }
 
 nav h2{
@@ -139,3 +137,66 @@ nav .userProfile{
 }
 
 /* ---------------------------------------------------------------- */
+
+
+.loadingScreen{
+    position: fixed;
+    background: white;
+    width: 100%;
+    height: 100vh;
+    align-content: center;
+    justify-items: center;
+
+    z-index: 1;
+}
+
+span{
+    position: absolute;
+    left: 50%;
+
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+    animation: load 2s infinite ease-in-out;
+}
+
+.item1{
+    background: var(--primary-color);
+    animation-delay: -1.5s;
+}
+
+.item2{
+    background: var(--primary-color-dark);
+    animation-delay: -1s;
+}
+
+.item3{
+    background: var(--primary-color);
+    animation-delay: -0.5s;
+}
+
+.item4{
+    background: var(--primary-color-dark);
+    animation-delay: 0s;
+}
+
+@keyframes load {
+    0%{
+        transform: translate(0%);
+        border-radius: 50%;
+    }
+    25%{
+        transform: translate(150%) scale(0.5);
+        border-radius: 0%;
+    }
+    50%{
+        transform: translate(150%, 150%);
+        border-radius: 50%;
+    }
+    75%{
+        transform: translate(0, 150%) scale(0.5);
+        border-radius: 0%;
+    }
+}

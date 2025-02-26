@@ -16,7 +16,15 @@
     <title>Home Page</title>
 </head>
 <body>
+    <!-- This will appear if loading takes a while -->
+    <div class="loadingScreen">
+        <span class="item1"></span>
+        <span class="item2"></span>
+        <span class="item3"></span>
+        <span class="item4"></span>
+    </div>
 
+    <main id="content">
     <!-- The Main Page Navigation -->
     <header>
         <nav class="main-Navigation">
@@ -37,23 +45,59 @@
 
     <!-- Welcoming Section -->
     <div class="welcoming-Section">
-        <img src="./Resources/Images/Image1" alt="">
-        <img src="./Resources/Images/Image4" alt="">
-        <img src="./Resources/Images/Image2" alt="">
-        <img src="./Resources/Images/Image3" alt="">
-        <img src="./Resources/Images/Image5" alt="">
+        <img src="./Resources/Images/Image1.jpg" alt="">
+        <img src="./Resources/Images/Image4.jpg" alt="">
+        <img src="./Resources/Images/Image2.jpg" alt="">
+        <img src="./Resources/Images/Image3.jpg" alt="">
+        <img src="./Resources/Images/Image5.jpg" alt="">
+    
+        <div class="scrollDown"><p>Scroll Down</p> <i class='bx bx-chevron-down'></i></div>
     </div>
 
     <div class="section2">
         <h1>What We Offer</h1>
 
         <div class="section2-Content">
+
             <div class="content-Containers">
-                
-            </div>            
+                <div class="content-icon">
+                    <i class='bx bxl-visual-studio'></i>
+                </div>
+            </div>
+
+            <div class="content-Containers">
+                <div class="content-icon">
+                    <i class='bx bxs-chat'></i>
+                </div>
+            </div>
+            
+            <div class="content-Containers">
+                <div class="content-icon">
+                    <i class='bx bxs-calendar-event' ></i>
+                </div>
+            </div>
+
+            <div class="content-Containers">
+                <div class="content-icon">
+                    <i class='bx bxs-directions' ></i>
+                </div>
+            </div>
+
+            <div class="content-Containers">
+                <div class="content-icon">
+                    <i class='bx bx-target-lock' ></i>
+                </div>
+            </div>
+
+            <div class="content-Containers">
+                <div class="content-icon">
+                    <i class='bx bxs-widget'></i>
+                </div>
+            </div>
+
         </div>
     </div>
-
+</main>
 </body>
 <script type="module" src="./Scripts/Global.js"></script>
 <script type="module" src="./Scripts/Home_Page.js"></script>
