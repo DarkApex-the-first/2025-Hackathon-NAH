@@ -98,7 +98,6 @@ nav ul a:before{
     height: 4px;
     background: var(--primary-color);
 
-    border-radius: 30px;
     transition: 0.5s;
 }
 
@@ -111,8 +110,6 @@ nav ul a:after{
     width: 100%;
     height: 4px;
     background: var(--tertiary-color);
-    border-radius: 30px;
-
 
     transition: 0.5s;
 }
@@ -128,7 +125,6 @@ nav ul a:hover:after{
     justify-content: space-around;
     /* background: red; */
     align-items: center;
-    margin-right: 70px;
     width: 600px;
     height: 100%;
 }
@@ -143,45 +139,3 @@ nav .userProfile{
 }
 
 /* ---------------------------------------------------------------- */
-/* Welcoming Section */
-
-.welcoming-Section{
-    position: relative;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 100vw;
-    height: calc(100vh - 70px);
-
-    gap: 20px;
-    /* background: var(--primary-color-dark); */
-}
-
-.welcoming-Section img{
-    width: 250px;
-    height: 70%;
-    object-fit: cover;
-}
-
-/* Image PLacements */
-.welcoming-Section img:nth-child(1){
-    transform: translateY(-50px);
-}
-
-.welcoming-Section img:nth-child(2){
-    transform: translateY(30px);
-}
-
-.welcoming-Section img:nth-child(3){
-    transform: translateY(-20px);
-}
-
-.welcoming-Section img:nth-child(4){
-    transform: translateY(40px);
-}
-
-.welcoming-Section img:nth-child(5){
-    transform: translateY(-50px);
-}
