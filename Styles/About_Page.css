@@ -3,6 +3,12 @@
     /* border: 1px solid red; */
 }
 
+:root{
+    --carousel-width: 300px;
+    --carousel-height: 300px;
+    --partners-quantity: 8;
+}
+
 body{
     width: 100%;
     overflow-x: hidden;
@@ -105,7 +111,7 @@ body{
     height: 100%;
     display: flex;
     position: relative;
-    border: 1px solid #000;
+    border: 1px solid var(--secondary-color);
     overflow: hidden;
     border-radius: 2rem;
 }
@@ -178,3 +184,63 @@ body{
     object-fit: cover;
     transform: scale(0.4);
 } 
+
+.partners-section{
+    width: 100%;
+    height: 100vh;
+    margin-top: 2rem;
+    border: 1px solid;
+    border: 1px solid rgb(0, 8, 255);
+}
+
+.carousel{
+    width: 100%;
+    height: 200px;
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 10% 90%,
+        transparent
+    );
+}
+
+.carousel .carousel-container{
+    display: flex;
+    width: 100%;
+    min-width: calc(var(--carousel-width) * var(--partners-quantity));
+    position: relative;
+    border: solid 1px rgb(0, 255, 30);
+
+}
+
+.carousel:hover .carousel-slide{
+    animation-play-state: paused!important;
+
+}
+
+.carousel .carousel-container .carousel-slide{
+    width: var(--carousel-width);
+    height: var(--carousel-height);
+    position: absolute;
+    left: 100%;
+    animation: autoRun 20s linear infinite;
+    animation-delay: calc((20s / var(--partners-quantity)) * (var(--position) - 1));
+}
+
+.carousel .carousel-container .carousel-slide img{
+    width: 100%;
+}
+
+
+.partners-title{
+    font-size: 7rem;
+    text-align: center;
+}
+@keyframes autoRun{
+    from{
+        left: 100%;
+    }
+    to{
+        left: calc(var(--carousel-width) * -1);
+    }
+}
