@@ -1,19 +1,19 @@
 *{
     box-sizing: border-box;
-    /* border: solid 1px red; */
+    /* border: 1px solid red; */
 }
 
 body{
-    /* width: 100%; */
+    width: 100%;
     overflow-x: hidden;
-    /* padding-inline: 20rem; */
 }
 
 
 .about-section{
     width: 100%;
     padding-inline: 15rem;
-    margin-top: 5rem;
+    margin-top: 4rem;
+    grid-area: 2rem;
 }
 
 .about-h1{
@@ -29,7 +29,7 @@ body{
     background-color: var(--primary-color);
     color: #fff;
     border-radius: 2rem;
-    padding-inline: 2rem;
+    padding: 2rem;
 }
 
 .about-text-container{
@@ -43,7 +43,7 @@ body{
     max-width: 100%;
     height: 100%;
     aspect-ratio: 1;
-    /* border-radius: 50%; */
+    border-radius: 50% 2rem 2rem;
 }
 
 
@@ -51,4 +51,65 @@ body{
     font-weight: 300;
     line-height: 2.1rem;
     font-size: 1.2rem;
+}
+
+.aim-description-wrapper{
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.aim-text-container{
+    line-height: 1.5rem;
+}
+
+.aim-text-container h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.leaders-grid-wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    gap: 20px;
+    justify-items: center;
+}
+
+.leaders-display-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.leaders-display-section h2{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.club-member img{
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.club-member{
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 1;
+    height: 80%;
+    filter: grayscale(100%);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.351);
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
