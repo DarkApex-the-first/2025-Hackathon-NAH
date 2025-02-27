@@ -10,7 +10,7 @@
 }
 
 body{
-    width: 100%;
+    width: 100vw;
     overflow-x: hidden;
 }
 
@@ -48,7 +48,7 @@ body{
 .about-people-img {
     position: relative;
     display: block;
-    max-width: 100%;
+    /* max-width: 100%; */
     height: 100%;
     aspect-ratio: 1;
     border-radius: 50% 2rem 2rem;
