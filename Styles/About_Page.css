@@ -17,7 +17,7 @@ body{
 
 .about-section{
     width: 100%;
-    padding-inline: 15rem;
+    padding-inline: 12vw;
     margin-top: 2rem;
     grid-area: 2rem;
     height: 100vh;
