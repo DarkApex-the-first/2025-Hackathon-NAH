@@ -188,11 +188,16 @@ body{
 @media (width <= 500px){
 
     .line{
+        position: relative;
+        top: 10%;
         width: 80dvw;
     }
 
     .event-Container{
-        width: 650px;
+        position: relative;
+
+        top: 200px;
+        width: 600px;
         height: min-content;
         
         display: flex;
@@ -221,8 +226,9 @@ body{
     }
 
     .content-Container{
-        height: 125dvh;
-        /* background: red; */
+
+        justify-content: flex-start;
+        gap: 40px;
     }
 
     .bullets:hover{
@@ -233,9 +239,15 @@ body{
         display: none;
     }
 
-    body {
-        padding-bottom: 36dvh;
+    .event-Buttons{
+    justify-content: center;
+
     }
 
+    .content-Container h2{
+        height: 60px;
+        align-content: center;
+        width: 80%;
+    }
     
 }
