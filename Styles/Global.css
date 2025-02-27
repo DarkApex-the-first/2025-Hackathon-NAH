@@ -54,6 +54,10 @@ nav{
     height: 70px;
 }
 
+.nav-container{
+    height: 100%;
+}
+
 nav h2{
     padding-left: 30px;
 }
@@ -64,6 +68,7 @@ nav ul{
     list-style: none;
     gap: 20px;
     align-items: center;
+
 }
 
 nav ul a{
@@ -72,7 +77,7 @@ nav ul a{
 
     color: inherit;
     text-decoration: none;
-    padding: 10px;
+    padding: 0px 10px;
     cursor: pointer;
     height: 100%;
 
@@ -88,7 +93,7 @@ nav ul a:before{
     width: 100%;
     height: 4px;
     background: var(--primary-color);
-
+    z-index: 2;
     transition: 0.5s;
 }
 
@@ -96,11 +101,13 @@ nav ul a:after{
     content: "";
 
     position: absolute;
-    bottom: 5px;
+    bottom: 6px;
     left: 100%;
     width: 100%;
     height: 4px;
     background: var(--tertiary-color);
+
+    z-index: 2;
 
     transition: 0.5s;
 }
@@ -139,15 +146,17 @@ nav .userProfile{
 .loadingScreen{
     position: fixed;
     background: white;
-    width: 100%;
-    height: 100vh;
-    align-content: center;
-    justify-items: center;
+    width: 100dvw;
+    height: 100dvh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    z-index: 100;
+    z-index: 1000;
 }
 
-span{
+.loadingScreen span{
     position: absolute;
     left: 50%;
 
@@ -246,6 +255,10 @@ span{
 
     nav ul a::before,
     nav ul a::after{
+        display: none;
+    }
+
+    footer{
         display: none;
     }
 

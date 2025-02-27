@@ -1,5 +1,7 @@
 html {
     scroll-behavior: smooth;
+    scroll-snap-type: mandatory y;
+    scroll-snap-align: top;
 }
 
 
@@ -17,32 +19,72 @@ html {
 }
 
 .welcoming-Section img{
+    position: relative;
     width: 250px;
     height: 70%;
     object-fit: cover;
     background: var(--primary-color-dark);
-    transition: 0.2s ease-in-out;
+}
+
+.welcoming-Section::before{
+    content: '';
+
+    position: absolute;
+    background: var(--secondary-color);
+
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    height: 200px;
+    width: 100%;
+}
+
+.welcoming-Section::after{
+    content: 'WELCOME TO THE CODING CLUB';
+
+    position: absolute;
+    background: var(--primary-color-dark);
+
+    color: white;
+    text-align: center;
+    align-content: center;
+    font-size: 3em;
+    font-weight: 600;
+    top: 40%;
+    transform: translate(-50%);
+    left: 50%;
+    height: 100px;
+    width: 60%;
 }
 
 /* Image PLacements */
 .welcoming-Section img:nth-child(1) {
     transform: translateY(-50px);
+    --exaggerate:2;
 }
 
 .welcoming-Section img:nth-child(2) {
     transform: translateY(30px);
+    --exaggerate:-4;
+
 }
 
 .welcoming-Section img:nth-child(3) {
     transform: translateY(-20px);
+    --exaggerate:-6;
+
 }
 
 .welcoming-Section img:nth-child(4) {
     transform: translateY(40px);
+    --exaggerate:5;
+
 }
 
 .welcoming-Section img:nth-child(5) {
     transform: translateY(-50px);
+    --exaggerate:-2;
+
 }
 
 .welcoming-Section img:hover {
@@ -100,6 +142,7 @@ html {
 .section2{
     height: min-content;
     width: 100%;
+    height: 100dvh;
 
     position: relative;
     display: flex;
@@ -113,24 +156,25 @@ html {
 
 .section2 h1{
     margin-bottom: 20px;
+    background: white;
 }
 
 .section2-Content{
-    width: 80%;
-    height: 625px;
+    width: 85%;
+    height: 80%;
 
     display: grid;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     
-    gap: 40px;
+    gap: 30px;
 }
 
 .content-Containers{
     position: relative;
 
-    height: 100%;
+    height: 90%;
     background: var(--mid-secondary-color);
     border-radius: 5px;
     cursor: pointer;
@@ -170,6 +214,7 @@ html {
     z-index: 1;
 }
 
+
 .flip-card {
     width: 100%;
     height: 100%;
@@ -202,6 +247,8 @@ html {
     gap: 20px;
 }
 
+
+
 .flip-front h3{
     margin-top: 10%;
     color: var(--secondary-color);
@@ -226,6 +273,62 @@ html {
     transform: rotateY(180deg);
 }
 
+footer{
+    position: relative;
+    height: 400px;
+    background: var(--mid-secondary-color);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    color: white;
+}
+
+footer::before{
+    content: '';
+    position: absolute;
+    width: 95%;
+    justify-self: center;
+    height: 2px;
+    background: var(--primary-color);
+    top: 40%;
+}
+
+footer h1{
+    width: 100%;
+    height: 100%;
+    margin-left: 30px;
+    align-content: center;
+    font-size: 3em;
+}
+
+footer ul{
+    width: 60%;
+    height: 100%;
+
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer ul a{
+    font-size: 2em;
+    transition: 300ms;
+}
+
+footer p{
+    width: 80%;
+    line-height: 1.4em;
+    margin-left: 30px;
+    font-size: 1.5em;
+    color: #91b8d0;
+}
+
+footer ul a:hover{
+    color: var(--secondary-color);
+    scale: 1.5;
+}
 
 @keyframes appear{
     from{
@@ -237,6 +340,54 @@ html {
         transform: translateY(0px);
     }
 }
+/* ------------------------------------------------ */
+
+.Trip-section{
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.Trip-section h2{
+    width: 80%;
+    font-size: 2em;
+    /* padding: 10px; */
+    
+}
+
+.mason-something{
+    height: 70%;
+    width: 80%;
+    border-radius: 10px;
+    /* background: var(--primary-color); */
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.mason-something img{
+    outline: solid black 5px;
+    height: 50%;
+    transition: 400ms;
+}
+
+.mason-something img:hover{
+    scale: 1.25;
+    z-index: 2;
+}
+
+.mason-something:has(img:hover) img:not(:hover){
+    filter: blur(1px) brightness(30%);
+
+}
+
+
+
 /* ------------------------------------------------ */
 
 @media (width <= 800px){

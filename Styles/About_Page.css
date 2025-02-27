@@ -3,6 +3,8 @@
     /* border: 1px solid red; */
 }
 
+
+
 :root{
     --carousel-width: 300px;
     --carousel-height: 300px;
@@ -10,12 +12,13 @@
 }
 
 body{
-    width: 100vw;
+    width: 100dvw;
     overflow-x: hidden;
 }
 
 
 .about-section{
+
     width: 100%;
     padding-inline: 12vw;
     margin-top: 2rem;

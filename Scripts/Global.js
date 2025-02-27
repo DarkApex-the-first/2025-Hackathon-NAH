@@ -13,4 +13,6 @@ window.onload = function() {
     // Once everything is loaded, show the content and hide the loading screen
     content.style.display = 'block'; 
     loadingScreen.style.display = 'none';
+
+    
 };
