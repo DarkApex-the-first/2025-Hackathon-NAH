@@ -13,6 +13,7 @@
 
 h1{
     font-size: 4rem;
+    margin-bottom: 20px;
 }
 
 .resources-grid-wrapper{
@@ -41,12 +42,28 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 2px solid rgb(200, 200, 200);
+    position: relative;
+}
+
+.resource-wallpaper i{
+    position: absolute;
+    left: 50%;
+    top: calc(100% - 25px);
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 0.5rem;
+    font-size: 2.5rem;
+    border: 5px solid white;
 }
 
 .resource-wallpaper img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: brightness(0.9);
     /* border: 1px solid red; */
 }
 
