@@ -1,5 +1,4 @@
 body{
-    /* background: red; */
     display: flex;
     flex-direction: column;;    
 }
@@ -184,7 +183,3 @@ body{
     background: var(--secondary-color);
 }
 /* ----------------------------------------------- */
-
-@media (width <= 100px){
-    
-}

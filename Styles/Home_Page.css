@@ -2,10 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
-    justify-items: center;
-}
-
 
 .welcoming-Section{
     position: relative;
@@ -123,21 +119,19 @@ body{
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    
     gap: 40px;
 }
 
 .content-Containers{
     position: relative;
 
+    height: 100%;
     background: var(--mid-secondary-color);
     border-radius: 5px;
     cursor: pointer;
 
     padding: 10px;
-
-    /* animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 30%; */
 }
 
 .content-Containers::before{
@@ -189,7 +183,6 @@ body{
 
 .flip-front, .flip-back {
     position: absolute;
-    width: 100%;
     height: 100%;
     backface-visibility: hidden;
     font-size: 24px;
@@ -240,26 +233,3 @@ body{
     }
 }
 /* ------------------------------------------------ */
-
-@media (width <= 1000px){
-    
-
-    .section2{
-        height: 200dvh;
-        background: red;
-
-    }
-
-    .content-Containers{
-        position: relative;
-        height: max-content;
-        width: 500px;
-        height: 500px;
-    }
-
-    .section2-Content{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-}
