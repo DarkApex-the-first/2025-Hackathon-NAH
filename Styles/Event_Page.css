@@ -1,5 +1,4 @@
 body{
-    /* background: red; */
     display: flex;
     flex-direction: column;;    
 }
@@ -78,32 +77,31 @@ body{
 
 .timeline-Content-Container{
     height: 500px;
-    border-radius: 5px;
+    width: 100%;
 
-    align-content: center;
-    justify-items: center;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     gap: 5px;
-    padding: 5px;
     /* background: var(--primary-color); */
-
 }
 
 
 .event-Container{
     position: relative;
-    width: 800px;
-    height: min-content;
+    max-width: 80%;
+    
+    max-width: 50%;
+
 
     align-content: center;
     justify-items: center;
 
-
+    justify-self: center;
     padding: 20px;
     border-radius: 5px;
 
-    gap: 5px;
     background: var(--mid-secondary-color);
 }
 
