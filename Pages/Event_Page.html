@@ -5,7 +5,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Macondo&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Styles/Global.css">
-    <link rel="stylesheet" href="./Styles/Home_Page.css">
+    <link rel="stylesheet" href="./Styles/Event_Page.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <meta charset="UTF-8">
@@ -13,7 +13,15 @@
     <title>Event Page</title>
 </head>
 <body>
+    <!-- This will appear if loading takes a while -->
+    <div class="loadingScreen">
+        <span class="item1"></span>
+        <span class="item2"></span>
+        <span class="item3"></span>
+        <span class="item4"></span>
+    </div>
 
+    <main id="content">
     <!-- The Main Page Navigation -->
     <header>
         <nav class="main-Navigation">
@@ -32,7 +40,56 @@
         </nav>
     </header>
 
+    <div class="content-Container">
+
+        <div class="timeline-Container">
+            <div class="line">
+
+                <div class="bullets" data-event-index="0">
+                    <p class="event-date"></p>
+                </div>
+                <div class="bullets" data-event-index="1">
+                    <p class="event-date"></p>
+
+                </div>
+                <div class="bullets" data-event-index="2">
+                    <p class="event-date"></p>
+
+                </div>
+                <div class="bullets" data-event-index="3">
+                    <p class="event-date"></p>
+
+                </div>
+                <div class="bullets" data-event-index="4">
+                    <p class="event-date"></p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-Content-Container">
+            <div class="timeline-Content">
+
+                <div class="event-Container">
+                    <h1 class="event-Title">Event Title</h1>
+                    <div class="event-Details">
+                        <p class="event-Description"></p>
+                    </div>
+
+                    <div class="event-Buttons">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDz47CmSo1Kzg-G_9mwO7OPREzmLPcub2HMya2Zjeu91sI8g/closedform" class="event-Button">Register</a>
+                        <a class="event-Button">More Info <i class='bx bx-info-circle'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        
+    </footer>
+</main>
 </body>
-<script type="module" src="./Scripts/Global.js"></script>
-<script type="module" src="./Scripts/Home_Page.js"></script>
+<script src="./Scripts/Global.js"></script>
+<script src="./Scripts/Event_Page.js"></script>
 </html>
