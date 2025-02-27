@@ -24,6 +24,8 @@ html {
     height: 70%;
     object-fit: cover;
     background: var(--primary-color-dark);
+    /* animation: pulse 5s calc(1s * var(--exaggerate)) infinite; */
+    transition: 0.2s ease-in-out;
 }
 
 .welcoming-Section::before{
@@ -65,13 +67,13 @@ html {
 
 .welcoming-Section img:nth-child(2) {
     transform: translateY(30px);
-    --exaggerate:-4;
+    --exaggerate:4;
 
 }
 
 .welcoming-Section img:nth-child(3) {
     transform: translateY(-20px);
-    --exaggerate:-6;
+    --exaggerate:3;
 
 }
 
@@ -83,7 +85,7 @@ html {
 
 .welcoming-Section img:nth-child(5) {
     transform: translateY(-50px);
-    --exaggerate:-2;
+    --exaggerate:1;
 
 }
 
@@ -93,7 +95,7 @@ html {
 
 .welcoming-Section:has(img:hover) img:not(:hover) {
     transition: filter 100ms ease-in-out;
-    filter: grayscale(50%);
+    filter: grayscale(20%) brightness(70%);
     transition: 0.2s ease-in-out;
 
 }
@@ -114,6 +116,19 @@ html {
 
 .mobile-welcome-Section{
     display: none;
+}
+
+@keyframes pulse {
+    0%{
+        filter: brightness(100%);
+    }
+    50%{
+        filter: brightness(50%);
+    }
+    100%{
+        filter: brightness(100%);
+
+    }
 }
 
 @keyframes bobbing {
@@ -273,62 +288,7 @@ html {
     transform: rotateY(180deg);
 }
 
-footer{
-    position: relative;
-    height: 400px;
-    background: var(--mid-secondary-color);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
-    color: white;
-}
 
-footer::before{
-    content: '';
-    position: absolute;
-    width: 95%;
-    justify-self: center;
-    height: 2px;
-    background: var(--primary-color);
-    top: 40%;
-}
-
-footer h1{
-    width: 100%;
-    height: 100%;
-    margin-left: 30px;
-    align-content: center;
-    font-size: 3em;
-}
-
-footer ul{
-    width: 60%;
-    height: 100%;
-
-    justify-self: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-footer ul a{
-    font-size: 2em;
-    transition: 300ms;
-}
-
-footer p{
-    width: 80%;
-    line-height: 1.4em;
-    margin-left: 30px;
-    font-size: 1.5em;
-    color: #91b8d0;
-}
-
-footer ul a:hover{
-    color: var(--secondary-color);
-    scale: 1.5;
-}
 
 @keyframes appear{
     from{

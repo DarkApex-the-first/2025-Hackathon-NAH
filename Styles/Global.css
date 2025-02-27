@@ -188,6 +188,82 @@ nav .userProfile{
     animation-delay: 0s;
 }
 
+footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: var(--primary-color-dark);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    color: white;
+}
+
+footer::before{
+    content: '';
+    position: absolute;
+    width: 95%;
+    justify-self: center;
+    height: 2px;
+    background: var(--primary-color);
+    top: 40%;
+    z-index: 1;
+
+}
+
+footer::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    justify-self: center;
+    height: 90%;
+    background-image: url(../Resources/Images/2Image.jpeg);
+    filter: brightness(25%);
+
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+footer h1{
+    width: 100%;
+    height: 100%;
+    margin-left: 50px;
+    align-content: center;
+    font-size: 3em;
+    z-index: 1;
+}
+
+footer ul{
+    width: 60%;
+    height: 100%;
+
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+
+}
+
+footer ul a{
+    font-size: 2.5em;
+    transition: 300ms;
+}
+
+footer p{
+    width: 80%;
+    line-height: 1.6em;
+    margin-left: 50px;
+    font-size: 1.5em;
+    z-index: 1;
+}
+
+footer ul a:hover{
+    color: var(--secondary-color);
+    scale: 1.5;
+}
+
 @keyframes load {
     0%{
         transform: translate(0%);
