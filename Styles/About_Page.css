@@ -12,8 +12,9 @@ body{
 .about-section{
     width: 100%;
     padding-inline: 15rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
     grid-area: 2rem;
+    height: 100vh;
 }
 
 .about-h1{
@@ -29,7 +30,8 @@ body{
     background-color: var(--primary-color);
     color: #fff;
     border-radius: 2rem;
-    padding: 2rem;
+    padding: 1rem;
+    padding-left: 3rem;
 }
 
 .about-text-container{
@@ -46,6 +48,9 @@ body{
     border-radius: 50% 2rem 2rem;
 }
 
+.event-link{
+    color: var(--secondary-color);
+}
 
 .about-description{
     font-weight: 300;
@@ -69,14 +74,13 @@ body{
     font-size: 2rem;
     margin-bottom: 1rem;
 }
-
 .leaders-grid-wrapper{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 300px);
-    gap: 20px;
     justify-items: center;
+    gap: 2rem;
 }
 
 .leaders-display-section{
@@ -86,6 +90,8 @@ body{
     align-items: center;
     width: 100%;
     margin-top: 2rem;
+    height: 100vh;
+    /* scroll-snap-align: start; */
 }
 
 .leaders-display-section h2{
@@ -94,22 +100,81 @@ body{
     margin-bottom: 3rem;
 }
 
-.club-member img{
+.club-member{
     width: 100%;
-    aspect-ratio: 1;
-    object-fit: cover;
-    border-radius: 50%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    border: 1px solid #000;
+    overflow: hidden;
+    border-radius: 2rem;
 }
 
-.club-member{
+.club-member:nth-child(3) .leader-image-container{
+    width: 45%;
+}
+
+.club-member:nth-child(3) .club-member-info{
+    max-width: 55%;
+    padding: 0;
+}
+
+.leader-image-container{
     overflow: hidden;
-    position: relative;
-    aspect-ratio: 1;
-    height: 80%;
-    filter: grayscale(100%);
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.351);
-    align-self: center;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.club-member-info{
+    position: absolute;
+    max-width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 0.5rem;
+    line-height: 2rem;
+    text-align: center;
+    text-wrap: wrap;
+    background-image: url(/Resources/Images/about-doodle.png);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+
+.club-member-info::before{
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: #fff;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.club-member-name{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: larger;
+    width: 100%;
+    z-index: 5;
+}
+
+.role{
+    color: var(--secondary-color);
+    z-index: 5;
+}
+
+.leader-image-container img{
+    object-fit: cover;
+    transform: scale(0.4);
+} 
