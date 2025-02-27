@@ -4,7 +4,7 @@
     --tertiary-color: #4BB3FD;
     --quaternary-color: #D7EBBA;
     --quinary-color: #EBF5BC;
-    --senary-color: #FEFFBE;
+    --senary-color: #feffb4;
 
     --primary-color-dark: #00223A;
     --mid-secondary-color:#002743;
@@ -147,7 +147,7 @@ nav .userProfile{
     align-content: center;
     justify-items: center;
 
-    z-index: 1;
+    z-index: 100;
 }
 
 span{
