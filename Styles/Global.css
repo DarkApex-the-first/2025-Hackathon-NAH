@@ -129,7 +129,8 @@ nav .userProfile{
     border-radius: 50%
 }
 
-.mobile-navigation{
+.mobile-navigation,
+.mobile-welcome-Section{
     display: none;
 }
 /* ---------------------------------------------------------------- */
@@ -200,16 +201,14 @@ span{
 /* ------------------------------------------------------ */
 
 @media (width <= 500px){
+
+    body {
+        padding-bottom: 10dvh;
+    }
+
     nav{
-        position:fixed;
-
-        bottom: 0;
-        left: 0;
-        width: 100dvw;
-
-        background: red;
-        bottom: 0%;
-        z-index: 2;
+        position: static;
+        display: none;
     }
 
     nav h2,
@@ -221,33 +220,28 @@ span{
         display: none;
     }
 
-    .mobile-navigation{
-        
-
+    .mobile-navigation {
+        position: fixed;
+        bottom: 0%;
+        left: 0;
         width: 100dvw;
         height: 10dvh;
         background: #ffffff;
+        display: flex;
+        gap: 5px;
+        transition: 2s;
+        z-index: 1000; 
+    }
 
+    /* Space out the icons */
+    .mobile-navigation a {
+        width: 100%;
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 5px;
-    }
-
-    .mobile-navigation a{
-        /* background: red; */
-        width: 100%;
-        height: 100%;
         text-align: center;
         font-size: 2em;
-
-    }
-
-    .mobile-navigation a i{
-        width: 100%;
-        height: 100%;
-        align-content: center;
-        /* background: blue; */
     }
 
     nav ul a::before,

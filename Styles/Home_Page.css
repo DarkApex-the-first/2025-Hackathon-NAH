@@ -70,6 +70,10 @@ html {
     /* animation: bobbing 1200ms 5s infinite; */
 }
 
+.mobile-welcome-Section{
+    display: none;
+}
+
 @keyframes bobbing {
     0%{
         transform: translateY(0px);
@@ -235,5 +239,26 @@ html {
 /* ------------------------------------------------ */
 
 @media (width <= 800px){
+    .welcoming-Section{
+        display: none;
+    }
 
+    .mobile-welcome-Section{
+        display: block;
+        position: relative;
+        height: 100dvh;
+        width: 100dvw;
+        /* background: red; */
+
+        background-image: url(../Resources/Images/mobile-Welcome.png);
+        background-size: 400px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .mobile-welcome-Section h1{
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+    }
 }
