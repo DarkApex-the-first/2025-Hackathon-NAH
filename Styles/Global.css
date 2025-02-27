@@ -58,13 +58,6 @@ nav h2{
     padding-left: 30px;
 }
 
-nav img{
-    width: 60px;
-    height: 60px;
-
-    border-radius: 50%;
-}
-
 nav ul{
     display: flex;
     height: 100%;
@@ -136,6 +129,9 @@ nav .userProfile{
     border-radius: 50%
 }
 
+.mobile-navigation{
+    display: none;
+}
 /* ---------------------------------------------------------------- */
 
 
@@ -199,4 +195,64 @@ span{
         transform: translate(0, 150%) scale(0.5);
         border-radius: 0%;
     }
+}
+
+/* ------------------------------------------------------ */
+
+@media (width <= 500px){
+    nav{
+        position:fixed;
+
+        bottom: 0;
+        left: 0;
+        width: 100dvw;
+
+        background: red;
+        bottom: 0%;
+        z-index: 2;
+    }
+
+    nav h2,
+    nav .userProfile{
+        display: none;
+    }
+
+    .desktop-navigation{
+        display: none;
+    }
+
+    .mobile-navigation{
+        
+
+        width: 100dvw;
+        height: 10dvh;
+        background: #ffffff;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .mobile-navigation a{
+        /* background: red; */
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 2em;
+
+    }
+
+    .mobile-navigation a i{
+        width: 100%;
+        height: 100%;
+        align-content: center;
+        /* background: blue; */
+    }
+
+    nav ul a::before,
+    nav ul a::after{
+        display: none;
+    }
+
 }
