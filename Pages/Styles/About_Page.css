@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    /* border: solid 1px red; */
+}
+
+body{
+    /* width: 100%; */
+    overflow-x: hidden;
+    /* padding-inline: 20rem; */
+}
+
+
+.about-section{
+    width: 100%;
+    padding-inline: 15rem;
+    margin-top: 5rem;
+}
+
+.about-h1{
+    font-size: 8rem;
+}
+
+.about-description-wrapper{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 2rem;
+    padding-inline: 2rem;
+}
+
+.about-text-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-people-img {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+    /* border-radius: 50%; */
+}
+
+
+.about-description{
+    font-weight: 300;
+    line-height: 2.1rem;
+    font-size: 1.2rem;
+}

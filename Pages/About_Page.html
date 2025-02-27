@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Macondo&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Pacifico&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./Styles/Global.css">
-        <link rel="stylesheet" href="./Styles/Home_Page.css">
+        <link rel="stylesheet" href="./Styles/About_Page.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
         <meta charset="UTF-8">
@@ -43,67 +43,73 @@
      </nav>
     </header>
     
-    <div>
-        <h2> We Are All About Joining Together Fellow Coders from Our IT Faculty Together</h2>
-    </div>
-    <div>   
-         <img src="https://procoders.tech/blog/migrating-from-php-to-node-js/" alt="image of a group of people coding around a table">
+    <section class="about-section">
+        <div class="about-description-wrapper">
+            <div class="about-text-container">
+                <h1 class="about-h1">About Us</h1>
+            <h2 class="about-description"> We Are All About Joining Together Fellow Coders from <br> Our IT Faculty Together</h2>
+            </div>
+            <img class="about-people-img" src="Resources/Images/about-people.png" alt="">
         </div>
+        <div>   
+             <img src="https://procoders.tech/blog/migrating-from-php-to-node-js/" alt="image of a group of people coding around a table">
+            </div>
+            <div>
+             <h3>The Aim Of Our Site:</h3>
+    
+             <p>The aim of our site is to join IT students together in order to be able to collaborate with each other 
+                for cool projects, share knowledge with each other(through teaching each other skills i.e. coding) and
+             create fun competitions (i.e. hackathons) for all of us who are part of the club to try out and test our skills,
+             in as well. We hope you come to like our community if you are a coder or are interested in coding like us
+                and that you find a home amongst your peers in IT within the club.
+            </p>
+            <!-- use css to underline and wrap the following paragraph tag in a box and add a different font and colour 
+             to the info in the tag below-->
+            <p>Note: if you are interested in building a portfolio of projects that can be added to your cv the various
+                club competitions such as hackathons can allow you to do projects that potential companies might
+                like. If you are interested in entering any of the competitions that are upcoming, 
+                <a href="./Event_Page.html" >please click this link.</a>
+            </p>
+        </div>
+    
         <div>
-         <h3>The Aim Of Our Site:</h3>
-
-         <p>The aim of our site is to join IT students together in order to be able to collaborate with each other 
-            for cool projects, share knowledge with each other(through teaching each other skills i.e. coding) and
-         create fun competitions (i.e. hackathons) for all of us who are part of the club to try out and test our skills,
-         in as well. We hope you come to like our community if you are a coder or are interested in coding like us
-            and that you find a home amongst your peers in IT within the club.
-        </p>
-        <!-- use css to underline and wrap the following paragraph tag in a box and add a different font and colour 
-         to the info in the tag below-->
-        <p>Note: if you are interested in building a portfolio of projects that can be added to your cv the various
-            club competitions such as hackathons can allow you to do projects that potential companies might
-            like. If you are interested in entering any of the competitions that are upcoming, 
-            <a href="./Event_Page.html" >please click this link.</a>
-        </p>
-    </div>
-
-    <div>
-        <h2>Meet our club's founding mothers and fathers:</h2>
-<!-- Please edit the structure of the following images below into rows and columns so that it looks tidier-->
-        <img src="./Resources/Images/Ayanda Dlamini - Secretary.jpeg" alt="Ayanda Dlamini, Secratary">
-
-        <img src="./Resources/Images/Conquerant Lembindi - Student and Wellness.jpeg" alt="Conquerant Lembindi, Sudent and Wellness">
-
-        <img src="./Resources/Images/Tanatswanashe Mthembu - Vice President.jpeg" alt="Tanatshwanashe Mthembu, Vice President">
-
-        <img src="./Resources/Images/Thoriso Dibatana - Treasurer.jpeg" alt="Thoriso Dibathana, Treasurer">
-
-        <img src="./Resources/Images/Vusi Kunene Matlou - President.jpeg" alt="Vusi Kunene Matlao, President">
-
-        <img src="./Resources/Images/Vuyisile Shokane - Events Planner.jpeg" alt="Vuyisile Shokane, Events Planner">
-    </div>
-
-    <div>
-      <h3>Our partners:</h3><br>
-      <!--Add our images of Eduvos Uni's partners in the form of Lee's carousel so that it looks aestetically clean-->
-      <a href="https://www.awsacademy.com/login?ec=302&startURL=%2F" target="_blank" >
-        <img src="./Resources/Images/image.jpg" alt="AWS Academy Logo"></a>
-
-        <a href="https://www.accaglobal.com/gb/en.html" target="_blank"> <img src="./Resources/Images/ACCA Gold Partner.png" alt="Logo of ACCA Gold"></a>
-
-        <a href="https://www.aicpa-cima.com/" target="_blank"> <img src="./Resources/Images/CIMA Partner.jpg" alt="Logo of Cima"></a>
-
-        <a href="https://www.comptia.org/" target="_blank"> <img src="./Resources/Images/CompTia Partner.jpg" alt="Logo of Comptia"></a>
-
-        <a href="https://www.iab.org.uk/" target="_blank"> <img src="./Resources/Images/iab Partner.jpg" alt="Logo of iab"></a>
-
-        <a href="https://www.icitp.org.za/" target="_blank"> <img src="./Resources/Images/ICITP Partner.png" alt="Logo of ICTITP"></a>
-
-        <a href="https://www.iitpsa.org.za/" target="_blank"> <img src="./Resources/Images/IITPSA Partner.png" alt="Logo of IITPSA"></a>
-
-        <a href="https://www.accaglobal.com/africa/en.html" target="_blank"> <img src="./Resources/Images/ACCA Sponsor.png" alt="Logo of ACCA sponsor"></a>
-    </div>
-</main>
+            <h2>Meet our club's founding mothers and fathers:</h2>
+    <!-- Please edit the structure of the following images below into rows and columns so that it looks tidier-->
+            <img src="./Resources/Images/Ayanda Dlamini - Secretary.jpeg" alt="Ayanda Dlamini, Secratary">
+    
+            <img src="./Resources/Images/Conquerant Lembindi - Student and Wellness.jpeg" alt="Conquerant Lembindi, Sudent and Wellness">
+    
+            <img src="./Resources/Images/Tanatswanashe Mthembu - Vice President.jpeg" alt="Tanatshwanashe Mthembu, Vice President">
+    
+            <img src="./Resources/Images/Thoriso Dibatana - Treasurer.jpeg" alt="Thoriso Dibathana, Treasurer">
+    
+            <img src="./Resources/Images/Vusi Kunene Matlou - President.jpeg" alt="Vusi Kunene Matlao, President">
+    
+            <img src="./Resources/Images/Vuyisile Shokane - Events Planner.jpeg" alt="Vuyisile Shokane, Events Planner">
+        </div>
+    
+        <div>
+          <h3>Our partners:</h3><br>
+          <!--Add our images of Eduvos Uni's partners in the form of Lee's carousel so that it looks aestetically clean-->
+          <a href="https://www.awsacademy.com/login?ec=302&startURL=%2F" target="_blank" >
+            <img src="./Resources/Images/image.jpg" alt="AWS Academy Logo"></a>
+    
+            <a href="https://www.accaglobal.com/gb/en.html" target="_blank"> <img src="./Resources/Images/ACCA Gold Partner.png" alt="Logo of ACCA Gold"></a>
+    
+            <a href="https://www.aicpa-cima.com/" target="_blank"> <img src="./Resources/Images/CIMA Partner.jpg" alt="Logo of Cima"></a>
+    
+            <a href="https://www.comptia.org/" target="_blank"> <img src="./Resources/Images/CompTia Partner.jpg" alt="Logo of Comptia"></a>
+    
+            <a href="https://www.iab.org.uk/" target="_blank"> <img src="./Resources/Images/iab Partner.jpg" alt="Logo of iab"></a>
+    
+            <a href="https://www.icitp.org.za/" target="_blank"> <img src="./Resources/Images/ICITP Partner.png" alt="Logo of ICTITP"></a>
+    
+            <a href="https://www.iitpsa.org.za/" target="_blank"> <img src="./Resources/Images/IITPSA Partner.png" alt="Logo of IITPSA"></a>
+    
+            <a href="https://www.accaglobal.com/africa/en.html" target="_blank"> <img src="./Resources/Images/ACCA Sponsor.png" alt="Logo of ACCA sponsor"></a>
+        </div>
+    </main>
+    </section>
 </body>
 <script type="module" src="./Scripts/Global.js"></script>
 <script type="module" src="./Scripts/Home_Page.js"></script>
