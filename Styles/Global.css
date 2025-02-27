@@ -3,7 +3,7 @@
     --secondary-color: #267EBD;
     --tertiary-color: #4BB3FD;
     --quaternary-color: #D7EBBA;
-    --quinary-color: #EBF5BC;
+    --quinary-color: #f5ffca;
     --senary-color: #feffb4;
 
     --primary-color-dark: #00223A;
@@ -203,7 +203,7 @@ span{
 @media (width <= 500px){
 
     body {
-        padding-bottom: 10dvh;
+        padding-bottom: 16dvh;
     }
 
     nav{

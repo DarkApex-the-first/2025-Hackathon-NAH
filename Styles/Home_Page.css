@@ -98,7 +98,7 @@ html {
 /* ------------------------------------------------- */
 
 .section2{
-    height: 100vh;
+    height: min-content;
     width: 100%;
 
     position: relative;
@@ -204,6 +204,7 @@ html {
 
 .flip-front h3{
     margin-top: 10%;
+    color: var(--secondary-color);
 }
 
 .flip-front p{
@@ -213,7 +214,7 @@ html {
 }
 
 .flip-back {
-    background: var(--senary-color);
+    background: var(--quinary-color);
     text-align: center;
     align-content: center;
     width: 90%;
@@ -254,11 +255,26 @@ html {
         background-size: 400px;
         background-repeat: no-repeat;
         background-position: center;
+        overflow: hidden;
     }
 
     .mobile-welcome-Section h1{
         position: absolute;
-        bottom: 10%;
+        bottom: 15%;
         left: 5%;
     }
+    
+    .section2-Content{
+        /* background: red; */
+        height: min-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-Containers{
+        height: 300px;
+        width: 100%;
+    }
+
+   
 }
