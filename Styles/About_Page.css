@@ -161,6 +161,7 @@ body{
     line-height: 2rem;
     text-align: center;
     text-wrap: wrap;
+    background-color: var(--primary-color);
     background-image: url(/Resources/Images/3Image.jpeg);
     background-position: center;
     background-size: cover;
