@@ -7,7 +7,7 @@
 
 :root{
     --carousel-width: 300px;
-    --carousel-height: 300px;
+    --carousel-height: 200px;
     --partners-quantity: 8;
 }
 
@@ -37,6 +37,9 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: var(--primary-color);
+    background-image: url(/Resources/Images/3Image.jpeg);
+    background-position: center;
+    background-size: cover;
     color: #fff;
     border-radius: 2rem;
     padding: 1rem;
@@ -80,7 +83,7 @@ body{
 }
 
 .aim-text-container h3{
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 .leaders-grid-wrapper{
@@ -119,19 +122,19 @@ body{
     border-radius: 2rem;
 }
 
-.club-member:nth-child(3) .leader-image-container{
+.club-member:nth-child(3) .leader-image-container, .club-member:nth-child(2) .leader-image-container,  .club-member:nth-child(5) .club-member-info{
     width: 45%;
 }
 
-.club-member:nth-child(3) .club-member-info{
+.club-member:nth-child(3) .club-member-info, .club-member:nth-child(2) .club-member-info,  .club-member:nth-child(5) .club-member-info{
     max-width: 55%;
-    padding: 0;
+    padding: 0.5rem;
 }
 
 .leader-image-container{
     overflow: hidden;
     position: absolute;
-    width: 50%;
+    width: 45%;
     height: 100%;
     top: 0;
     left: 0;
@@ -142,7 +145,9 @@ body{
 
 .club-member-info{
     position: absolute;
-    max-width: 50%;
+    display: flex;
+    flex: 1;
+    min-width: 55%;
     height: 100%;
     top: 0;
     right: 0;
@@ -155,27 +160,18 @@ body{
     line-height: 2rem;
     text-align: center;
     text-wrap: wrap;
-    background-image: url(/Resources/Images/about-doodle.png);
+    background-image: url(/Resources/Images/3Image.jpeg);
     background-position: center;
     background-size: cover;
-    background-blend-mode: lighten;
-}
-
-.club-member-info::before{
-    position: absolute;
-    content: "";
-    inset: 0;
-    background-color: #fff;
-    opacity: 0.9;
-    z-index: 1;
 }
 
 .club-member-name{
-    color: var(--primary-color);
+    color: #fff;
     font-weight: 700;
     font-size: larger;
     width: 100%;
     z-index: 5;
+    text-wrap: wrap;
 }
 
 .role{
@@ -189,14 +185,16 @@ body{
 } 
 
 .partners-section{
-    width: 100%;
-    height: min-content;
+    width: 400p;
+    height: 400px;
     margin: 6rem 0;
-
     overflow: hidden; 
     /* Lee: I added overflow hidden to stop view width inconsistencies*/
-    outline: 1px solid rgb(0, 8, 255);
+    /* outline: 1px solid rgb(0, 8, 255); */
 }
+
+
+/* ---------------------------Tutorial from Youtube: luna Dev--------------------------- */
 
 .carousel{
     width: 100%;
@@ -214,8 +212,7 @@ body{
     width: 100%;
     min-width: calc(var(--carousel-width) * var(--partners-quantity));
     position: relative;
-    outline: solid 1px rgb(0, 255, 30);
-
+    /* outline: solid 1px rgb(0, 255, 30); */
 }
 
 .carousel:hover .carousel-slide{
@@ -230,17 +227,28 @@ body{
     left: 100%;
     animation: autoRun 20s linear infinite;
     animation-delay: calc((20s / var(--partners-quantity)) * (var(--position) - 1));
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .carousel .carousel-container .carousel-slide img{
     width: 100%;
+    object-fit: fill;
 }
-
+/* -------------------------------------------------------------------------------------------- */
 
 .partners-title{
     font-size: 7rem;
     text-align: center;
+    margin-bottom: 3rem;
 }
+
+.club-leaders{
+    color: var(--secondary-color);
+}
+
+
 @keyframes autoRun{
     from{
         left: 100%;
@@ -301,3 +309,4 @@ body{
     }
 
 }
+
