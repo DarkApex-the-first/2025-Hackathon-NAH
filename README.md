@@ -6,6 +6,8 @@ Group: NAH
 	Andile Mbokazi eduv4881977
 
 No Dependencies
+----------------------------------
+#Also responsive on mobile*
 
 GitHub Live Server link: https://darkapex-the-first.github.io/2025-Hackathon-NAH/index.html
 ------------------------------------------------
