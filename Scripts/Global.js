@@ -1,5 +1,3 @@
-
-
 window.onload = function() {
     const loadingScreen = document.querySelector('.loadingScreen');
     const content = document.getElementById('content');

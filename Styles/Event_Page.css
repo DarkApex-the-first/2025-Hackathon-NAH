@@ -1,6 +1,6 @@
 body{
     display: flex;
-    flex-direction: column;;    
+    flex-direction: column;
 }
 
 .content-Container h2{
@@ -39,6 +39,7 @@ body{
     align-items: center;
     justify-content: space-between;
 }
+
 .bullets{
     position: relative;
     height: 50px;
@@ -49,6 +50,7 @@ body{
 
     justify-items: center;
 }
+
 .bullets::after{
     content: '';
     position: absolute;
@@ -94,7 +96,7 @@ body{
 
 .timeline-Content-Container{
     height: 100%;
-    width: 100%;
+    width: 100dvw;
 
     margin-top: 5%;
     display: flex;
@@ -103,6 +105,10 @@ body{
 
     gap: 5px;
     /* background: var(--primary-color); */
+}
+
+.timeline-Content{
+    width: 100dvw;
 }
 
 
@@ -206,27 +212,26 @@ body{
 @media (width <= 500px){
 
     .line{
-        position: relative;
-        top: 10%;
-        width: 80dvw;
+        width: 100dvw;
+    }
+
+    .timeline-Container{
+        width: 80%;
     }
 
     .event-Container{
         position: relative;
+        
 
-        top: 200px;
-        width: 600px;
+        width: 95dvw;
         height: min-content;
         
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        /* background: red; */
     }
 
     .bullets:nth-child(even)  .event-date{
         position: relative;
-        /* background: red; */
         transform: translateY(-50px);
     }
 
@@ -243,11 +248,6 @@ body{
         z-index: -1;
     }
 
-    .content-Container{
-
-        gap: 40px;
-    }
-
     .bullets:hover{
         scale: 1;
     }
@@ -262,9 +262,10 @@ body{
     }
 
     .content-Container h2{
+        display: block;
+
         height: 60px;
         align-content: center;
         width: 80%;
     }
-    
 }

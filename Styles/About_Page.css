@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    /* outline: 1px solid red; */
 }
 
 
@@ -23,7 +23,7 @@ body{
     padding-inline: 12vw;
     margin-top: 2rem;
     grid-area: 2rem;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .about-h1{
@@ -114,7 +114,7 @@ body{
     height: 100%;
     display: flex;
     position: relative;
-    border: 1px solid var(--secondary-color);
+    outline: 1px solid var(--secondary-color);
     overflow: hidden;
     border-radius: 2rem;
 }
@@ -190,10 +190,12 @@ body{
 
 .partners-section{
     width: 100%;
-    height: 100vh;
-    margin-top: 2rem;
-    border: 1px solid;
-    border: 1px solid rgb(0, 8, 255);
+    height: min-content;
+    margin: 6rem 0;
+
+    overflow: hidden; 
+    /* Lee: I added overflow hidden to stop view width inconsistencies*/
+    outline: 1px solid rgb(0, 8, 255);
 }
 
 .carousel{
@@ -212,7 +214,7 @@ body{
     width: 100%;
     min-width: calc(var(--carousel-width) * var(--partners-quantity));
     position: relative;
-    border: solid 1px rgb(0, 255, 30);
+    outline: solid 1px rgb(0, 255, 30);
 
 }
 
@@ -249,11 +251,15 @@ body{
 }
 
 @media (max-width: 768px) {
+    .partners-title{
+        font-size: 2em;
+    }
 
     .about-description-wrapper{
         display: flex;
+        flex-direction: column-reverse;
         width: 100%;
-        height: 400px;
+        height: 500px;
         justify-content: space-between;
         align-items: center;
         background-color: var(--primary-color);
@@ -271,9 +277,11 @@ body{
     .about-people-img {
         position: relative;
         display: block;
-        /* max-width: 100%; */
-        height: 100%;
-        aspect-ratio: 1;
+        max-width: 100%;
+        
+        
+        /* height: 100%; */
+        /* aspect-ratio: 1; */
         border-radius: 50% 2rem 2rem;
     }
 
@@ -291,4 +299,5 @@ body{
         display: flex;
         flex-direction: column;
     }
+
 }

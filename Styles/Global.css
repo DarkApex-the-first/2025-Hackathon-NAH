@@ -156,9 +156,8 @@ nav .userProfile{
     z-index: 1000;
 }
 
-.loadingScreen span{
+span{
     position: absolute;
-    left: 50%;
 
     display: block;
     width: 20px;

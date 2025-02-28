@@ -1,13 +1,14 @@
 
 
 .resources-section{
-    /* width: 100%; */
-    height: calc(100dvh - 70px);
+    width: 100%;
+    /* height: calc(100dvh - 70px); */
     outline: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 2rem;
     background-color: rgb(246, 246, 246);
 }
 
@@ -75,4 +76,40 @@ h1{
     align-items: center;
     flex-direction: column;
     /* border: 1px solid red; */
+}
+
+@media (width <= 500px){
+
+    .resources-section{
+        height: min-content;
+    }
+
+    .resources-section h1{
+        font-size: 2.4em;
+
+        height: 100%;
+        width: 100%;
+        margin-bottom: 10%;
+
+        text-align: center;
+
+        padding: 10px 0;
+    }
+
+    .resources-grid-wrapper{
+        display: flex;
+        flex-direction: column;
+
+        width: 100dvw;
+        height: min-content;
+
+        gap: 30px;
+        align-items: center;
+    }
+
+    .resource-grid-item{
+        border: 5px solid rgb(200, 200, 200);
+        height: 300px;
+    }
+
 }
