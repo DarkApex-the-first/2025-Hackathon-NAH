@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
             container.innerHTML = resources.map(resource => `
                 <div class="resource-grid-item">
                     <div class="resource-wallpaper">
-                        <img src="${resource.image}" alt="Resource Image">
+                        <img src="${resource.image}" alt="Resource Image" loading="lazy">
                         <i class="${resource.icon}"></i>   
                     </div>
                     <div class="resource-content">
