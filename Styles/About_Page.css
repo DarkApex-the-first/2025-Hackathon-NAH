@@ -37,7 +37,7 @@ body{
     height: 400px;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--primary-color);
+    background-color: rgb(24, 24, 93);
     background-image: url(/Resources/Images/3Image.jpeg);
     background-position: center;
     background-size: cover;
