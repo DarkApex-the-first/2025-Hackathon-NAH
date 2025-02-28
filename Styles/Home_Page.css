@@ -513,6 +513,10 @@ html {
         border: ridge 5px var(--primary-color);
     }
 
+    .hint,
+    .hint2{
+        display: none;
+    }
     @keyframes intro {
         0%{
             top: -15%;
