@@ -11,17 +11,14 @@ window.onload = function() {
             // Set event dates on page load
             setEventDates(data);
             loadingScreen.style.display = 'none';
-            // Add event listeners to each bullet for interaction
+
             for (let i = 0; i < bullets.length; i++) {
                 bullets[i].addEventListener('click', function() {
-                    // Trigger eventStuff function with the clicked index
                     eventStuff(data, i);
 
-                    // Loop through all bullets to change background color
                     for (let index = 0; index < bullets.length; index++) {
                         const bullet = bullets[index];
 
-                        // Reset all bullets to default color
                         bullet.style.background = '#00223A';
 
                         // Highlight the clicked bullet
@@ -32,9 +29,9 @@ window.onload = function() {
                 });
             }
 
-            // Optionally trigger the first event on page load
             if (data['events'] && data['events'][0]) {
-                eventStuff(data, 0);  // Show first event by default
+                // Show first event by default
+                eventStuff(data, 0);  
             }
         })
         .catch(error => {
@@ -44,11 +41,15 @@ window.onload = function() {
 
 // Function to display event information based on the clicked bullet
 function eventStuff(data, index) {
-    var eventTitle = document.getElementsByClassName('event-Title')[0];  // Access the first element for title
-    var eventDescription = document.getElementsByClassName('event-Description')[0];  // Access the first element for description
-
+    var eventTitle = document.getElementsByClassName('event-Title')[0];  
+    var eventDescription = document.getElementsByClassName('event-Description')[0]; 
+    var currentDate = document.getElementsByClassName('current-event-date')[0];
+    
+    
     // Use the index to get the correct event information
     eventTitle.innerText = data['events'][index]['title'];
+    currentDate.innerText = data['events'][index]['date'];
+
     eventDescription.innerText = data['events'][index]['description'];
 }
 
@@ -58,7 +59,6 @@ function setEventDates(data) {
     bullets.forEach((bullet, index) => {
         const eventDateElement = bullet.querySelector('.event-date');
 
-        // Update event date text based on the data
         if (eventDateElement && data['events'][index]) {
             eventDateElement.innerText = data['events'][index]['date'];
         }

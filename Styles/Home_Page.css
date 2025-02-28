@@ -21,7 +21,6 @@ html {
     height: 70%;
     object-fit: cover;
     background: var(--primary-color-dark);
-    /* animation: pulse 5s calc(1s * var(--exaggerate)) infinite; */
     transition: 0.2s ease-in-out;
 }
 
@@ -104,11 +103,13 @@ html {
     flex-direction: column;
 
     align-items: center;
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: 600;
 
     color: var(--primary-color-dark);
-    /* animation: bobbing 1200ms 5s infinite; */
+    animation: bobbing 1200ms 2s;
+    animation-iteration-count: 4;
+
 }
 
 .mobile-welcome-Section{
@@ -309,11 +310,7 @@ html {
 }
 
 .Trip-section h2{
-    position: relative;
-    width: 80%;
     font-size: 2em;
-    /* padding: 10px; */
-    
 }
 
 .mason-something{

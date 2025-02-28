@@ -187,6 +187,100 @@ span{
     animation-delay: 0s;
 }
 
+/* ------------------------------------------------------ */
+/* User Account */
+.userProfile:hover{
+    background: var(--primary-color);
+    color: var(--tertiary-color);
+    cursor: pointer;
+}
+
+.overlay{
+    position: fixed;
+    height: 95dvh;
+    width: 95dvw;
+    top: 50%;
+    left: 50%;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+
+    background: #000000a0;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.overlay i{
+    position: absolute;
+    top: 2%;
+    right: 1%;
+
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: var(--mid-secondary-color);
+    font-size: 2em;
+
+    text-align: center;
+    align-content: center;
+}
+
+.overlay i:hover{
+    background: var(--primary-color-dark);
+    color: var(--tertiary-color);
+    cursor: pointer;
+}
+
+.userInfo{
+    position: relative;
+    height: min-content;
+    width: 300px;
+    background: var(--primary-color-dark);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: groove var(--primary-color) 12px;
+    gap: 20px;
+    padding: 30px;
+}
+
+
+.userInfo h3{
+    color: white;
+}
+
+.userInfo input{
+    height: 50px;
+    width: 100%;
+    border: none;
+    background: var(--primary-color);
+    border-radius: 2px;
+    color: white;
+    font-size: 1.7em;
+    padding: 0 16px;
+}
+
+.userInfo button{
+    height: 50px;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: none;
+    background: var(--secondary-color);
+    color: white;
+    border-radius: 5px;
+
+    font-size: 1.25em;
+}
+/* ------------------------------------------------------ */
+
+
 footer{
     position: relative;
     width: 100%;
@@ -251,6 +345,8 @@ footer ul a{
 }
 
 footer p{
+    position: relative;
+    top: -10%;
     width: 80%;
     line-height: 1.6em;
     margin-left: 50px;
