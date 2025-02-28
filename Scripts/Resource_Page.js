@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <div class="options"><i class="fa-solid fa-ellipsis"></i></div>
                     </div>
                 </div>
-            `).join(""); // Combine the array into a single string
+            `).join("");
 
         })
         .catch(error => {
