@@ -1,7 +1,7 @@
 .courses-section {
-    max-width: 100vw;
-    height: 100vh;
-    border: 1px solid blue;
+    max-width: 100dvw;
+    height: 100dvh;
+    /* border: 1px solid blue; */
     padding-inline: 5vw;
 }
 
@@ -32,7 +32,7 @@
 
 .lang-course{
     height: max-content;
-    border: 1px solid green;
+    /* border: 1px solid green;/ */
     padding: 1px solid purple;
 
 }
@@ -76,4 +76,21 @@
     border: 1px solid dimgray;
     padding: 5px;
     border-radius: 0.5rem;
+}
+
+/* --------------------------------------------- */
+@media (width <= 500px){
+    .courses-grid-container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .lang-course{
+        display: flex;
+        flex-direction: column;
+        height: min-content;
+        justify-content: space-around;
+        gap: 10px;
+    }
 }

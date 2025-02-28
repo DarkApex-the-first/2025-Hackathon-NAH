@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./Styles/Global.css">
-    <link rel="stylesheet" href="./Styles/Courses_page.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Macondo&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Galada&family=Jost:ital,wght@0,100..900;1,100..900&family=Macondo&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Pacifico&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./Styles/Global.css">
+        <link rel="stylesheet" href="./Styles/Courses_page.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+    </head>
 <body>
         <!-- This will appear if loading takes a while -->
-        <!-- <div class="loadingScreen">
-            <span class="item1"></span>
-            <span class="item2"></span>
-            <span class="item3"></span>
-            <span class="item4"></span>
-        </div>
-     -->
-        <ul class="mobile-navigation">
-            <a href="./index.html"><i class='bx bxs-home-alt-2'></i></a>
-            <a href="./About_Page.html"><i class='bx bxs-book-reader'></i></a>
-            <a href="./Event_Page.html"><i class='bx bxs-calendar-event'></i></a>
-            <a href="./Resource_Page.html"><i class='bx bxs-widget'></i></a>
-        </ul>
+    <div class="loadingScreen">
+        <span class="item1"></span>
+        <span class="item2"></span>
+        <span class="item3"></span>
+        <span class="item4"></span>
+    </div>
+
+    <ul class="mobile-navigation">
+        <a href="./index.html"><i class='bx bxs-home-alt-2'></i></a>
+        <a href="./About_Page.html"><i class='bx bxs-book-reader'></i></a>
+        <a href="./Event_Page.html"><i class='bx bxs-calendar-event'></i></a>
+        <a href="./Resource_Page.html"><i class='bx bxs-widget'></i></a>
+    </ul>
     
         <main id="content">
         <!-- The Main Page Navigation -->
@@ -39,6 +46,15 @@
                     </ul>
     
                     <div class="userProfile">AA</div>
+                    <div class="overlay">
+                        <i class='bx bx-x'></i>
+
+                        <div class="userInfo">
+                            <h3>Edit Profile</h3>
+                            <input type="text" class="userName" id="userName">
+                            <button id="SaveChanges">Save Changes</button>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -71,7 +87,7 @@
                 </div>
             </div>
         </section>
-        <!-- <footer>
+        <footer>
             <h1>The Coding Club</h1>
             <ul><a href="https://www.tiktok.com/@codingclub404"><i class='bx bxl-tiktok'></i></a>
                 <a href="https://www.linkedin.com/in/coding-club-3841b1349"><i class='bx bxl-linkedin'></i></a>
@@ -80,6 +96,8 @@
             </ul>
     
             <p>"Where every line of code is a step toward innovation, and every challenge is a lesson in perseverance. The only limit is the one you refuse to push beyond." <br> - A coding club member</p>
-        </footer> -->
+        </footer>
 </body>
+<script type="module" src="./Scripts/Global.js"></script>
+<script type="module" src="./Scripts/Home_Page.js"></script>
 </html>

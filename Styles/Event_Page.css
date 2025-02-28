@@ -8,8 +8,6 @@
     flex-direction: column;
     align-items: center;
 
-    /* background: red; */
-    overflow-x: hidden;
     gap: 70px;
 }
 
@@ -218,6 +216,7 @@
     }
 
     .timeline-Content{
+        
         width: 100dvw;
     }
 
@@ -252,6 +251,10 @@
         scale: 1;
     }
 
+    .event-Container::before{
+        display: none;
+    }
+
     .event-Details::before{
         display: none;
     }
@@ -268,5 +271,9 @@
         height: 60px;
         align-content: center;
         width: 80%;
+    }
+
+    .current-event-date{
+        display: none;
     }
 }

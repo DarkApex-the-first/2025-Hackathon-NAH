@@ -3,11 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     fetch("Scripts/Resource_Page.json")
         .then(response => {
-            // Check if the response is successful (status 200-299)
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
-            return response.json(); // Parse the JSON response
+            return response.json(); 
         })
         .then(resources => {
             // Map the resources to HTML and insert them into the container
@@ -29,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         })
         .catch(error => {
-            // Handle any errors that occur during the fetch or processing
             console.error("Error loading resources:", error);
         });
 });
