@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.querySelector(".resources-grid-wrapper");
 
-    fetch("/Scripts/Resource_Page.json")
+    fetch("Scripts/Resource_Page.json")
         .then(response => {
             // Check if the response is successful (status 200-299)
             if (!response.ok) {
