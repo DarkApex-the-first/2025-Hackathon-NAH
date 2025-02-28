@@ -1,0 +1,74 @@
+[
+    {
+        "language": "HTML",
+        "title": "HTML for Beginners",
+        "length": "1h 30m",
+        "progress": "13 / 15",
+        "icon": "fa-brands fa-html5",
+        "image": "Resources/Images/3Image.jpeg"
+    },
+    {
+        "language": "CSS",
+        "title": "CSS for Beginners",
+        "length": "1h 30m",
+        "progress": "13 / 15",
+        "icon": "fa-brands fa-css3",
+        "image": "Resources/Images/3Image.jpeg"
+    },
+    {
+        "language": "JS",
+        "title": "js for Beginners",
+        "length": "1h 30m",
+        "progress": "13 / 15",
+        "icon": "fa-brands fa-js",
+        "image": "Resources/Images/3Image.jpeg"
+    },
+    {
+        "language": "Python",
+        "title": "Python for Beginners",
+        "length": "1h 30m",
+        "progress": "13 / 15",
+        "icon": "fa-brands fa-python",
+        "image": "Resources/Images/3Image.jpeg"
+    },
+    {
+        "language": "Rust",
+        "title": "Rust for Beginners",
+        "length": "1h 30m",
+        "progress": "13 / 15",
+        "icon": "fa-brands fa-rust",
+        "image": "Resources/Images/3Image.jpeg"
+    },
+    {
+        "language": "Node js",
+        "title": "Node Js for Beginners",
+        "length": "1h 30m",
+        "progress": "13 / 15",
+        "icon": "fa-brands fa-node",
+        "image": "Resources/Images/3Image.jpeg"
+    },
+    {
+        "language": "Database",
+        "title": "Databases for Beginners",
+        "length": "1h 30m",
+        "progress": "13 / 15",
+        "icon": "fa-solid fa-database",
+        "image": "Resources/Images/3Image.jpeg"
+    },
+    {
+        "language": "React",
+        "title": "React for Beginners",
+        "length": "1h 30m",
+        "progress": "13 / 15",
+        "icon": "fa-brands fa-react",
+        "image": "Resources/Images/3Image.jpeg"
+    },
+    {
+        "language": "Github",
+        "title": "Github for Beginners",
+        "length": "1h 30m",
+        "progress": "13 / 15",
+        "icon": "fa-brands fa-github",
+        "image": "Resources/Images/3Image.jpeg"
+    }
+]
