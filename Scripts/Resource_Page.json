@@ -5,7 +5,8 @@
         "length": "1h 30m",
         "progress": "13 / 15",
         "icon": "fa-brands fa-html5",
-        "image": "Resources/Images/3Image.jpeg"
+        "image": "Resources/Images/3Image.jpeg",
+        "link": "Courses_Page.html"
     },
     {
         "language": "CSS",

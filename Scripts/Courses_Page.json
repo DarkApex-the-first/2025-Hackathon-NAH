@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Variables",
+        "name": "Learn about variables",
+        "description": "Description 1",
+        "tags": ["Python", "Hard", "Easy", "Medium"]
+    },
+    {
+        "title": "Functions",
+        "name": "Learn about functions",
+        "description": "Description 2",
+        "tags": ["Python","Hard", "Easy", "Medium"]
+    },
+    {
+        "title": "Classes",
+        "name": "Learn about classes",
+        "description": "Description 3",
+        "tags": ["Python","Hard", "Easy", "Medium"]
+    }
+]

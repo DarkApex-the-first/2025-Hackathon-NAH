@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 </div>
                 <div class="resource-content">
                     <div class="resource-lang">${resource.language}</div>
-                    <div class="course-title">${resource.title}</div>
+                    <a class="course-title" href="${resource.link}" class="resource-title">${resource.title}</a>
                     <div class="course-length"><i class="fa-solid fa-clock"></i> ${resource.length}</div>
                     <div class="progress-count">${resource.progress}</div>
                     <div class="options"><i class="fa-solid fa-ellipsis"></i></div>
